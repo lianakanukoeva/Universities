@@ -29,6 +29,11 @@
             <artifactId>apache-poi-ooxml</artifactId>
             <version>1.2.1.2-jre17</version>
         </dependency>
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>apache-poi-ooxml</artifactId>
+            <version>1.2.1.2-jre17</version>
+        </dependency>
     </dependencies>
 
 </project>
