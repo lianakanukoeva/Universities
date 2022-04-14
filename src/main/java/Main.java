@@ -1,13 +1,20 @@
 import models.Student;
+import models.University;
+
+import java.io.IOException;
+import java.util.List;
+
+import static models.ReadXLSX.readStudents;
+import static models.ReadXLSX.readUniversity;
 
 public class Main {
-    public static void main(String[] args) {
-        String name = "Stiles Stilinsky";
-        String university = "FBI";
-        int course = 1;
-        float avgscore = (float) 4.7;
-        Student student = new Student(name, university, course, avgscore);
-
-        System.out.println(student.toString());
+    public static void main(String[] args) throws IOException {
+        List<University> universities = readUniversity();
+//        List<Student> students = readStudents();
+        System.out.println("Сначла университеты:");
+        System.out.println(universities);
+        System.out.println();
+        System.out.println("Затем студенты:");
+//        System.out.println(students);
     }
 }

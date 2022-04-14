@@ -1,18 +1,29 @@
 package enums;
 
 public enum StudyProfile {
-    MEDICINE ("МЕДИЦИНА"),
-    PROGRAMMING ("ПРОГРАММИРОВАНИЕ"),
-    MATH ("МАТЕМАТИКА"),
-    LANGUEGES ("ЯЗЫКИ"),
-    ART ("ИСКУССТВО"),
-    PHYSICS ("ФИЗИКА"),
-    CHEMISTRY ("ХИМИЯ"),
-    HISTORY ("ИСТОРИЯ");
+    MEDICINE("Медицина"),
+    PROGRAMMING("Программирование"),
+    FILILOGY("Филология"),
+    HISTORY("История"),
+    ART("Искусство"),
+    ECONOMY("Экономика"),
+    MARKETING("Марткетинг"),
+    PHYSICS("Физика"),
+    LINGUISTICS("Лингвистка"),
+    MATHEMATICS("Математика");
 
-    private String title;
+//    MEDICINE ("МЕДИЦИНА"),
+//    PROGRAMMING ("ПРОГРАММИРОВАНИЕ"),
+//    MATH ("МАТЕМАТИКА"),
+//    LANGUEGES ("ЯЗЫКИ"),
+//    ART ("ИСКУССТВО"),
+//    PHYSICS ("ФИЗИКА"),
+//    CHEMISTRY ("ХИМИЯ"),
+//    HISTORY ("ИСТОРИЯ");
 
-    StudyProfile( String title) {
-        this.title = title;
+    private final String profileName;
+
+    private StudyProfile(String profileName) {
+        this.profileName = profileName;
     }
 }
