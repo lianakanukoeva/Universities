@@ -21,15 +21,14 @@ public class ReadXLSX {
 
         XSSFSheet xssfSheet = xssfWorkbook.getSheet("Студенты");
 
-        Iterator iterator = xssfSheet.iterator();
         Student student = new Student();
         List<Student> studentList = new ArrayList();
 
-        while(iterator.hasNext()) {
-            Row row = (Row) iterator.next();
-            Iterator cells = row.iterator();
+        Iterator<Row> rows = xssfSheet.iterator();
+        rows.next();
 
-            while(cells.hasNext()) {
+            while(rows.hasNext()) {
+                Row row = rows.next();
                 for (int i = 0; i < row.getPhysicalNumberOfCells(); i++) {
                     Cell cell = row.getCell(i);
                     if(i == 0) {
@@ -47,7 +46,6 @@ public class ReadXLSX {
                 }
                 studentList.add(student);
             }
-        }
         return  studentList;
     }
 

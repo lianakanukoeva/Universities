@@ -5,7 +5,6 @@ import enums.StudentEnum;
 import enums.UniversityEnum;
 
 public class EnumComparator {
-    private EnumComparator(){}
 
     public static UniversityComparator getUniversityComparator(UniversityEnum universityEnum) {
         switch (universityEnum) {
