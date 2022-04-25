@@ -19,18 +19,18 @@ public class Main {
         List<University> universities = readUniversity();
         List<Student> students = readStudents();
 
-        System.out.println(universities);
-        System.out.println(students);
+//        System.out.println(universities);
+//        System.out.println(students);
 
         UniversityComparator universityComparator = EnumComparator.getUniversityComparator(UniversityEnum.FULL_NAME);
         StudentComparator studentComparator = EnumComparator.getStudentComparator(StudentEnum.FULLNAME);
 
-//        System.out.println("Сначла университеты:");
-//        Stream universityStream = universities.stream();
-//        universityStream.sorted(universityComparator).forEach(System.out::println);
-//
-//        System.out.println("Затем студенты:");
-//        Stream studentStream = students.stream();
-//        studentStream.sorted(studentComparator).forEach(System.out::println);
+        System.out.println("Сначла университеты:");
+        Stream universityStream = universities.stream();
+        universityStream.sorted(universityComparator).forEach(System.out::println);
+
+        System.out.println("Затем студенты:");
+        Stream studentStream = students.stream();
+        studentStream.sorted(studentComparator).forEach(System.out::println);
     }
 }
