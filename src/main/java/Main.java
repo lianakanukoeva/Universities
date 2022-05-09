@@ -11,8 +11,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static models.ReadXLSX.readStudents;
-import static models.ReadXLSX.readUniversity;
+import static readwrite.ReadXLSX.readStudents;
+import static readwrite.ReadXLSX.readUniversity;
 
 public class Main {
     public static void main(String[] args) throws IOException {
