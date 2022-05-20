@@ -3,20 +3,11 @@ package models;
 import enums.StudyProfile;
 
 public class Statistics {
-    StudyProfile mainProfile;
-    float avgExamScore;
-    int currentStudents;
-    int currentUniversity;
-    String universityName;
-
-    public Statistics(StudyProfile mainProfile, float avgExamScore, int currentStudents, int currentUniversity, String universityName) {
-        this.mainProfile = mainProfile;
-        this.avgExamScore = avgExamScore;
-        this.currentStudents = currentStudents;
-        this.currentUniversity = currentUniversity;
-        this.universityName = universityName;
-    }
-
+    private StudyProfile mainProfile;
+    private float avgExamScore;
+    private int currentStudents;
+    private int currentUniversity;
+    private String universityName;
 
     public StudyProfile getMainProfile() {
         return mainProfile;

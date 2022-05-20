@@ -15,7 +15,7 @@ import static readwrite.ReadXLSX.readStudents;
 import static readwrite.ReadXLSX.readUniversity;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         // чтение из файла
         List<University> universities = readUniversity();
         List<Student> students = readStudents();
@@ -59,5 +59,6 @@ public class Main {
             Student studentDeserialize = JsonUtil.studentDeserialize(studentObjectJson);
             System.out.println(studentDeserialize);
         });
+
     }
 }
